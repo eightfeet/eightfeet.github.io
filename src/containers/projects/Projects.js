@@ -28,7 +28,7 @@ export default function Projects() {
       .query({
         query: gql`
           {
-            repositoryOwner(login: "your github username") {
+            repositoryOwner(login: "eightfeet") {
               ... on User {
                 pinnedRepositories(first: 6) {
                   edges {
@@ -55,6 +55,7 @@ export default function Projects() {
         `
       })
       .then(result => {
+        console.log(result);
         setrepoFunction(result.data.repositoryOwner.pinnedRepositories.edges);
         console.log(result);
       });
