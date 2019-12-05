@@ -27,6 +27,7 @@
 .greeting-text {
   font-size: 70px;
   line-height: 1.1;
+  margin-bottom: 0;
 }
 
 .greeting-text-p {
@@ -37,6 +38,14 @@
 .greeting-image-div > img {
   max-width: 100%;
   height: auto;
+}
+
+.subname {
+  display: inline-block;
+  font-size: 25px;
+  padding-left: 20px;
+  color: #888;
+  margin-top: 0;
 }
 
 /* Media Query */
@@ -61,6 +70,15 @@
     line-height: normal;
     text-align: center;
   }
+
+  .subname {
+    font-size: 13px;
+    display: block;
+    padding-left: 0;
+    color: #888;
+    text-align: center;
+  }
+
   .greeting-main {
     display: block;
   }

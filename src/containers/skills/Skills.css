@@ -18,6 +18,27 @@
 .skills-heading {
   font-size: 56px;
   font-weight: 400;
+  font-weight: bold;
+}
+
+.icontag {
+  display: block;
+  margin-bottom: 10px;
+}
+
+.icontag span {
+  color: #444;
+}
+
+.icontag::before {
+  font-size: 20px;
+  display: inline-block;
+  width: 20px;
+  vertical-align: middle;
+}
+
+.skills-image-div .apexcharts-legend-marker {
+  display: none;
 }
 
 /* Media Query */

@@ -1,79 +1,52 @@
 import React, { useState, useEffect } from "react";
-import ApolloClient from "apollo-boost";
-import { gql } from "apollo-boost";
+import Card from "../../components/Card/Card";
 import "./Project.css";
 import GithubRepoCard from "../../components/githubRepoCard/GithubRepoCard";
 import Button from "../../components/button/Button";
+import imagespulld from "./../../assests/images/pulld.svg";
+import imagesselect from "./../../assests/images/select.svg";
+import imagesgame from "./../../assests/images/game.svg";
+import imagesnote from "./../../assests/images/note.svg";
+
+
+const data = [
+  {
+    image: imagesgame,
+    title: 'vemon',
+    description: 'venom 是抽奖活动模块化的一套前端方案；',
+    url: 'http://www.eightfeet.cn/vemonDoc/'
+  },{
+    image: imagespulld,
+    title: 'rmc-pull-updown-to-refresh',
+    description: '简单易用的react拖拉翻页组件、react列表下拉刷新组件',
+    url: 'https://github.com/eightfeet/rmc-pull-updown-to-refresh/blob/master/README.md'
+  },{
+    image: imagesselect,
+    title: '@eightfeet/picker',
+    description: '基于底层纯js的select选择器',
+    url: 'https://github.com/eightfeet/Picker'
+  },{
+    image: imagesnote,
+    title: '@eightfeet/modal',
+    description: '基于底层纯js的select选择器',
+    url: 'https://github.com/eightfeet/Modal'
+  }
+]
 
 export default function Projects() {
   const [repo, setrepo] = useState([]);
 
-  useEffect(() => {
-    getRepoData();
-  }, []);
-
-  function getRepoData() {
-    const client = new ApolloClient({
-      uri: "https://api.github.com/graphql",
-      request: operation => {
-        operation.setContext({
-          headers: {
-            authorization: `Bearer ${atob("MjZiMTJmZDZjYWJhNzYxZGQ3NDJlMjhkZDAyY2E1Mjg4Y2MzYTZlYw==")}`
-          }
-        });
-      }
-    });
-
-    client
-      .query({
-        query: gql`
-          {
-            repositoryOwner(login: "eightfeet") {
-              ... on User {
-                pinnedRepositories(first: 6) {
-                  edges {
-                    node {
-                      nameWithOwner
-                      description
-                      forkCount
-                      stargazers {
-                        totalCount
-                      }
-                      url
-                      id
-                      diskUsage
-                      primaryLanguage {
-                        name
-                        color
-                      }
-                    }
-                  }
-                }
-              }
-            }
-          }
-        `
-      })
-      .then(result => {
-        console.log(result);
-        setrepoFunction(result.data.repositoryOwner.pinnedRepositories.edges);
-        console.log(result);
-      });
-  }
-
-  function setrepoFunction(array) {
-    setrepo(array);
-  }
 
   return (
     <div className="main" id="opensource">
-      <h1 className="project-title">Open Source Projects</h1>
+      <h1 className="project-title">开源项目</h1>
       <div className="repo-cards-div-main">
-        {repo.map((v, i) => {
-          return <GithubRepoCard repo={v} key={v.node.id} />;
-        })}
+        {
+          data.map((item) => (<Card data={item} />))
+        }
+        
       </div>
-      <Button text={"More Projects"} className="project-button" href="https://github.com/saadpasta" newTab={true} />
+      <Button text={"More Packages"} className="project-button" href="https://www.npmjs.com/~eightfeet" newTab={true} />
     </div>
   );
 }

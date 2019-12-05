@@ -30,13 +30,23 @@
 }
 
 .header .logo {
-  display: block;
-  float: left;
-  font-size: 1.5em;
-  text-decoration: none;
-  margin-top: 10px;
-  line-height: normal;
+  display: inline-block;
+  font-size: 20px;
+  line-height: 58px;
 }
+
+.header .logo i {
+  color: #55188b;
+  font-weight: bolder;
+  font-style: normal;
+}
+
+.header .logo::before {
+  display: inline-block;
+  vertical-align: middle;
+  height: 0.8em;
+}
+
 .header .logo-name {
   font-family: 'Agustina Regular';
   font-weight: bold;

@@ -7,13 +7,12 @@ export default function Contact() {
     <div className="main contact-margin-top" id="contact">
       <div className="contact-div-main">
         <div className="contact-header">
-          <h1 className="heading contact-title">Contact Me ☎️</h1>
-          <p className="subTitle contact-subtitle">Discuss a project or just want to say hi my inbox is open for all</p>
+          <h1 className="heading contact-title">联系我 ☎️</h1>
         </div>
         <div className="contact-text-div">
-          <h1 className="contact-detail">+92-3243454077</h1>
+          <h1 className="contact-detail"><a href="tel:13622809420">+86-13622809420</a></h1>
 
-          <h1 className="contact-detail-email">saadpasta70@gmail.com</h1>
+          <h1 className="contact-detail-email">747095684@qq.com</h1>
 
           <SocialMedia />
         </div>
