@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/static/css/main.a5cc500c.chunk.css",
-    "main.js": "/static/js/main.1fdb0e57.chunk.js",
-    "main.js.map": "/static/js/main.1fdb0e57.chunk.js.map",
+    "main.js": "/static/js/main.219e0856.chunk.js",
+    "main.js.map": "/static/js/main.219e0856.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.d76835b0.js",
     "runtime-main.js.map": "/static/js/runtime-main.d76835b0.js.map",
     "static/js/2.e0861774.chunk.js": "/static/js/2.e0861774.chunk.js",
     "static/js/2.e0861774.chunk.js.map": "/static/js/2.e0861774.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.66501d257affc42ea4e122cd9c99c6e7.js": "/precache-manifest.66501d257affc42ea4e122cd9c99c6e7.js",
+    "precache-manifest.9ce7398b12c87becaf10169055e89299.js": "/precache-manifest.9ce7398b12c87becaf10169055e89299.js",
     "service-worker.js": "/service-worker.js",
     "static/css/main.a5cc500c.chunk.css.map": "/static/css/main.a5cc500c.chunk.css.map",
     "static/media/index.css": "/static/media/Agustina.21f233e1.woff",
@@ -35,6 +35,6 @@
     "static/js/runtime-main.d76835b0.js",
     "static/js/2.e0861774.chunk.js",
     "static/css/main.a5cc500c.chunk.css",
-    "static/js/main.1fdb0e57.chunk.js"
+    "static/js/main.219e0856.chunk.js"
   ]
 }
