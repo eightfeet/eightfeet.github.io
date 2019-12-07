@@ -6,7 +6,7 @@ const data = {
   options: {
     plotOptions: {
       radialBar: {
-        offsetY: -10,
+        offsetY: 20,
         startAngle: 0,
         endAngle: 360,
         hollow: {
@@ -31,7 +31,7 @@ const data = {
       show: true,
       floating: true,
       fontSize: '16px',
-      position: 'left',
+      position: 'top',
       offsetX: 0,
       offsetY: 10,
       labels: {
@@ -65,7 +65,7 @@ const data = {
         breakpoint: 480,
         options: {
             legend: {
-                show: false
+                show: true
             }
         }
     }]

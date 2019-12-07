@@ -8,7 +8,8 @@ export default function socialMedia() {
         <i className="fab fa-github"></i>
         <span></span>
       </a>
-      <a href="https://www.linkedin.com/in/saadpasta/" className="icon-button qq" target="_blank">
+      <a href="
+http://wpa.qq.com/msgrd?v=3&uin=747095684&site=在线客服&menu=yes" className="icon-button qq" target="_blank">
         <i className="fab fa-qq"></i>
         <span></span>
       </a>
