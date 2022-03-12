@@ -16,9 +16,6 @@ function Header() {
         </label>
         <ul className="menu">
           <li>
-            <a href="#skills">技能</a>
-          </li>
-          <li>
             <a href="#opensource">开源项目</a>
           </li>
           <li>

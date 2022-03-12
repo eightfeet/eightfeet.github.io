@@ -14,7 +14,6 @@ export default class Main extends Component {
       <div>
         <Header />
         <Greeting />
-        <Skills />
         <Projects />
         <Contact />
         <Footer />

@@ -12,14 +12,14 @@ import imagesnote from "./../../assests/images/note.svg";
 const data = [
   {
     image: imagesgame,
-    title: 'vemon',
-    description: 'venom 是抽奖活动模块化的一套前端方案；',
-    url: 'http://www.eightfeet.cn/vemonDoc/'
+    title: 'yugong',
+    description: 'yugong 是一套前端低代码编辑解决方案；',
+    url: 'https://github.com/eightfeet/yugong'
   },{
     image: imagespulld,
     title: 'rmc-pull-updown-to-refresh',
     description: '简单易用的react拖拉翻页组件、react列表下拉刷新组件',
-    url: 'https://github.com/eightfeet/rmc-pull-updown-to-refresh/blob/master/README.md'
+    url: 'https://github.com/eightfeet/rmc-pull-updown-to-refresh'
   },{
     image: imagesselect,
     title: '@eightfeet/picker',
@@ -28,8 +28,8 @@ const data = [
   },{
     image: imagesnote,
     title: '@eightfeet/modal',
-    description: '基于底层纯js的select选择器',
-    url: 'https://github.com/eightfeet/Modal'
+    description: '基于底层纯js的模态框，支持多种定制',
+    url: 'https://github.com/eightfeet/ModalV2'
   }
 ]
 
